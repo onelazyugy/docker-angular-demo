@@ -3,7 +3,11 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
 ## How to deploy to AWS elastic beanstalk as docker image?
-
+- $ ng build --prod --aot // will create a dist/ folder under output folder
+- zip the content of the output/ folder as 'output.zip'
+- go to your AWS elastic beanstalk and create a new application
+- choose docker and upload the zip file
+- once done, you app will be running in AWS elastic beanstalk as a docker container
 
 ## Development server
 
